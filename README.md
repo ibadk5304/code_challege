@@ -1,3 +1,10 @@
+# Note from Ibad Khan:
+The environment set-up took time because of the following issue
+1. The environment mysql user for docker container was not root, it is user
+2. The port 3306 did not work which declared in docker-compose.yml, I added another port 4306, then connect the application database with table plus
+
+The total time I took for this coding challenge is about 1h and 50minutes, however I spent time on docker environment it was 
+a good learning curve for me. Due to busy schedule I could not submit it early. Thank you for understanding.
 # Laravel Code Challenge
 
 This code test involves performing work on an existing Laravel project.

@@ -58,13 +58,7 @@ class UserController extends Controller
      *
      * @return JsonResponse
      */
-    public function index(User $user): JsonResponse
-    {
-        $d = User::all();
-        return \Response::json(
-            $d
-        );
-    }
+
     public function show(User $user, $nickName): JsonResponse
     {
         // get the single user with nickname first

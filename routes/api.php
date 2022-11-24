@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('users')->group(function () {
     Route::post('', [UserController::class, 'store'])->name('user.store');
-    Route::get('/all', [UserController::class, 'index'])->name('user.index');
     Route::get('{user}/{nickname}', [UserController::class, 'show'])->name('user.show');
     Route::post('{user}', [UserController::class, 'update'])->name('user.update');
 });
